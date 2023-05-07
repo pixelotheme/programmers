@@ -12,21 +12,6 @@ public class EvenAndOdd {
         */
 
         int num = 50035;
-//        String answer;
-//
-//        int remainder;
-
-//        if(num == 0){
-//            answer = "Even";
-//        }else{
-//            remainder = num%2;
-//            if(remainder == 0){
-//                answer = "Even";
-//            }else{
-//                answer = "Odd";
-//            }
-//        }
-//        EvenAndOdd evenAndOdd = new EvenAndOdd();
 
         System.out.println(evenOdd(num));
     }
@@ -35,3 +20,5 @@ public class EvenAndOdd {
         return (num % 2 == 0)? "Even" : "Odd";
     }
 }
+
+
