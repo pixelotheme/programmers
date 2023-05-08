@@ -25,16 +25,9 @@ public class FindAverage {
             sum += a;
             System.out.println("sum = " + sum);
         }
-
         answer = sum / arr.length;
 
-
         System.out.println("answer = " + answer );
-
     }
 
-    int method (){
-
-        return 0;
-    }
 }
