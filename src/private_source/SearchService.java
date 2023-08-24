@@ -26,6 +26,11 @@ public class SearchService {
      * 
      * */
     public String[] bizGbn(File file){
+        //file.list() 메서드 안에 FilenameFilter.accept를 호출하는 로직이 있다
+        //필요한것은 FilenameFilter 자체를 구현하기만 하면 된다 -
+        //(current, name) - 인터페이스.accept() 파라미터값 표시 - 익명 클래스를 람다식 으로 변환하면 파라미터만 남는다
+        // -> 인터페이스 구현 - 가져올 파일 조건
+
         String [] direc = file.list((current, name) -> new File(current,name).isDirectory());
         return direc;
     }
